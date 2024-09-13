@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(34, 97, 2);
+}
+
+.modal {
+    position: fixed;
+    background: #fff;
+    padding: 5vh;
+    border-radius: 8px;
+    text-align: center;
+    width: 20vw;
+    max-width: 50%;
+    margin: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000; /* Ensure modal is above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2vw;
+}
+/* Container for stock and foundations */
+.stock-and-foundations {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 7vw; /* Space between stock and foundations */
+    margin-bottom: 2%;
+}
+
+
+/* Suit buttons container */
+.suit-buttons {
+    margin-bottom: 1.5vw;
+    text-align: center;
+}
+
+/* Button styles */
+.suit-buttons button {
+    padding: 0.5vw 1vw; 
+    font-size: 1.2vw; 
+    border: 0.1vw solid #ccc; 
+    border-radius: 0.2vw; 
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+/* Active button styles */
+.suit-buttons button.active {
+    background-color: #b0e57c; /* Light green or another color to indicate active state */
+    border-color: #7bba44; /* Darker border to match active state */
+}
+
+
+/* Timer styling */
+.timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5vw;
+    background-color: rgb(9, 180, 160); /* Background color for the timer */
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+
+    .game-container {
+        padding: 1vw; /* Reduced padding */
+    }
+
+}

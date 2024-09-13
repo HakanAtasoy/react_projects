@@ -1,0 +1,22 @@
+.stock {
+    position: relative;
+    width: 7vw; 
+    aspect-ratio: 1/1.5; 
+
+}
+
+
+.stock .card {
+    position: absolute;
+    /* Ensure only the top card is visible */
+    z-index: 1;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+
+    .stock {
+        width: 8.5vw; /* Adjust width */
+    }
+
+}
