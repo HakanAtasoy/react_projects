@@ -1,0 +1,70 @@
+.container {
+    width: 1000px;
+    height: 800px;
+    color: white;
+    background-color: black;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.plane-container {
+    position: absolute;
+    left: 50px;
+    top: 40%;
+    width: 400px;
+    transform: translateY(-50%); 
+}
+
+.speedometer-container {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    width: 350px;
+    text-align: center;
+}
+
+.speedometer-circle-svg {
+    position: relative;
+    z-index: 1; /* Ensures it is below the arrow */
+}
+
+.speedometer-arrow-svg {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+    max-width: 120px;
+    z-index: 2; /* Ensures it is above the circle */
+    transform-origin: 50% 90%;
+    will-change: transform;
+}
+
+.speed-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 110px;
+    z-index: 2; /* Ensures it is above the circle */
+}
+
+.battery-container {
+    position: absolute;
+    right: 0;
+    top: 4%;
+    width: 250px;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+}
+
+.svg {
+    fill: white;
+}

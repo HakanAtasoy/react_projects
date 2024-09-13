@@ -1,0 +1,44 @@
+{
+    "name": "fighter-aircraft-server",
+    "private": true,
+    "version": "0.0.0",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "start": "vite",
+        "preview": "vite preview",
+        "electron": "electron .",
+        "package": "npm run build && electron-builder"
+    },
+    "dependencies": {
+        "framer-motion": "^11.3.21",
+        "lodash": "^4.17.21",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "use-throttle": "^0.0.3"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "electron": "^31.3.1",
+        "electron-builder": "^24.13.3",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.3",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "vite": "^5.3.4"
+    },
+    "main": "electron-main.js", 
+    "build": {
+      "appId": "com.example.myapp",
+      "files": [
+        "dist/**/*",
+        "electron-main.js" 
+      ],
+      "directories": {
+        "output": "dist" 
+      }
+    }
+}
